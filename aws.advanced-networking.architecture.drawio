@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-17T23:39:15.762Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.41" etag="-7RP5Q6LHUMkghiUqhI2" version="21.0.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-03-17T23:49:50.297Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.41" etag="Dm74mZ-0ijbqKm7enS9o" version="21.0.7" type="github" pages="2">
   <diagram name="Overview" id="aU1sGeixLe_H0MGIM1QB">
     <mxGraphModel dx="2286" dy="1898" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -592,6 +592,9 @@
         </mxCell>
         <mxCell id="pALvZJlh6alHDejHyQkI-50" value="&lt;p style=&quot;line-height: 180%;&quot;&gt;&lt;font color=&quot;#ffffff&quot; face=&quot;Poppins&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Since there is no Internet Gateway entry this subnet is private and there is no connectivity to the internet.&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="850" y="140" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AsLeJE8qdVFHF5DGnlhw-1" value="&lt;p style=&quot;line-height: 205%;&quot;&gt;&lt;font face=&quot;Poppins&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;We can enable &lt;/font&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#b266ff&quot;&gt;auto assign public IPs&lt;/font&gt;&lt;/b&gt;&lt;font color=&quot;#ffffff&quot;&gt; which will &lt;/font&gt;&lt;font color=&quot;#b266ff&quot;&gt;assign public IP to all the EC2 instances when they startup&lt;/font&gt;&lt;font color=&quot;#ffffff&quot;&gt; | or we can &lt;/font&gt;&lt;font color=&quot;#ffff66&quot;&gt;only assign public IP to those instances we want when we spin them up&lt;/font&gt;&lt;font color=&quot;#ffffff&quot;&gt;.&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-360" y="-50" width="410" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
