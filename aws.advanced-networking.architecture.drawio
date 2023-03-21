@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-21T00:43:12.614Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.44" etag="4oyAoZ1qesWeTjfzhjZU" version="21.0.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-03-21T01:34:43.121Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.44" etag="tfvommxCJ7XoSyPFOcAi" version="21.0.7" type="github" pages="4">
   <diagram name="Overview" id="aU1sGeixLe_H0MGIM1QB">
     <mxGraphModel dx="2288" dy="1901" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -687,6 +687,53 @@
         </mxCell>
         <mxCell id="QJXWdBy4OWbNO3SpQy3K-23" value="&lt;p style=&quot;line-height: 165%;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot; data-font-src=&quot;https://fonts.googleapis.com/css?family=Poppins&quot; face=&quot;Poppins&quot;&gt;requests from on premises datacetre&lt;/font&gt;&lt;/p&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="790" y="205" width="310" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="xOWW85uz3i5ReCkUNiHL" name="IP blocking pattern with NACL">
+    <mxGraphModel dx="2688" dy="701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tpw83m4ufz750HHdF2MR-2" value="" style="rounded=1;arcSize=10;dashed=1;strokeColor=#ff0000;fillColor=none;gradientColor=none;dashPattern=8 4;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-959" y="301" width="199.5" height="199.5" as="geometry" />
+        </mxCell>
+        <mxCell id="fWuYZweaDdHcUDsZsurT-1" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ec2;" vertex="1" parent="1">
+          <mxGeometry x="-910" y="350" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tpw83m4ufz750HHdF2MR-1" value="&lt;font color=&quot;#3399ff&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;EC2 instance&lt;/b&gt;&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=default;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Poppins;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DPoppins;" vertex="1" parent="1">
+          <mxGeometry x="-920" y="450" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tpw83m4ufz750HHdF2MR-3" value="&lt;p style=&quot;line-height: 180%;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b style=&quot;color: rgb(51, 153, 255);&quot;&gt;Security Group &lt;/b&gt;&lt;font color=&quot;#ffffff&quot;&gt;allowing inbound HTTPS traffic from the internet.&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;" style="text;strokeColor=none;align=center;fillColor=default;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Poppins;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DPoppins;" vertex="1" parent="1">
+          <mxGeometry x="-998.75" y="510" width="279" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tpw83m4ufz750HHdF2MR-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="tpw83m4ufz750HHdF2MR-4" target="fWuYZweaDdHcUDsZsurT-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tpw83m4ufz750HHdF2MR-4" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/mac_client.svg;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="346.81" width="100" height="106.38" as="geometry" />
+        </mxCell>
+        <mxCell id="tpw83m4ufz750HHdF2MR-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.82;entryY=-0.053;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#a20025;strokeColor=#FF6666;" edge="1" parent="1" source="tpw83m4ufz750HHdF2MR-5" target="tpw83m4ufz750HHdF2MR-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tpw83m4ufz750HHdF2MR-5" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#BF0816;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.waf_bot;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="550" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tpw83m4ufz750HHdF2MR-6" value="" style="rounded=1;whiteSpace=wrap;html=1;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="-710" y="430" width="440" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tpw83m4ufz750HHdF2MR-10" value="&lt;font color=&quot;#3399ff&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;regular client&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=default;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Poppins;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DPoppins;" vertex="1" parent="1">
+          <mxGeometry x="-250" y="460" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tpw83m4ufz750HHdF2MR-11" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b style=&quot;color: rgb(51, 153, 255);&quot;&gt;bot &lt;/b&gt;&lt;font color=&quot;#ffffff&quot;&gt;sending spam requests&lt;/font&gt;&lt;/span&gt;" style="text;strokeColor=none;align=center;fillColor=default;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Poppins;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DPoppins;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="660" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tpw83m4ufz750HHdF2MR-12" value="&lt;font color=&quot;#3399ff&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Network Access List Control (NACL)&lt;/b&gt;&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=default;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Poppins;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DPoppins;rotation=0;direction=east;" vertex="1" parent="1">
+          <mxGeometry x="-645" y="271" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tpw83m4ufz750HHdF2MR-13" value="&lt;p style=&quot;line-height: 170%;&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;bot IP blocked using deny rule&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="text;strokeColor=none;align=center;fillColor=default;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Poppins;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DPoppins;" vertex="1" parent="1">
+          <mxGeometry x="-670" y="577.5" width="140" height="45" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
